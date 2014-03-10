@@ -8,7 +8,7 @@ CREATE TABLE students
 P_Id int NOT NULL,
 name varchar(255),
 birth varchar(255),
-gpa int,
+gpa float(2, 1),
 grad int,
 CONSTRAINT id PRIMARY KEY (P_Id)
 );
@@ -55,7 +55,7 @@ Question #6:
 ============
 SELECT name, gpa
 FROM students
-WHERE gpa > 3.0;
+WHERE gpa>3.0;
 
 
 Question #7:
